@@ -9,7 +9,7 @@ export default function List() {
                 <li><Link href="/about">About</Link></li>
                 <li><Link href="/Projects">Projects</Link></li>
                 <li><Link href="/expe">Experience</Link></li>
-                <li><Link href="/ToDoList">To Do List</Link></li>
+                <li><Link href="/todolist">To Do List</Link></li>
 
 
             </ul>
