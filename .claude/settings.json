@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -f app/components/Checked.jsx app/components/QuestGreeting.jsx app/components/SetMyInfo.jsx app/components/UserGreeting.jsx app/components/Useresinfo.jsx app/components/WendowWidth.jsx app/components/counter.jsx app/components/products.jsx app/components/textBox.jsx app/components/user.jsx app/components/Todolist.jsx app/components/demo.module.css app/components/Skills.jsx app/termnalforwesite)",
+      "Bash(rm -rf app/about app/Projects app/expe app/todolist app/api)",
+      "Bash(mkdir -p \"c:\\\\Users\\\\678bs\\\\OneDrive\\\\Desktop\\\\program\\\\Next.js-P\\\\portfolio-nextjs\\\\app\\\\data\" && echo \"data folder ready\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(npx kill-port *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\" http://localhost:3001)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\678bs\\OneDrive\\Desktop\\program\\Next.js-P\\portfolio-nextjs\\app"
+    ]
+  }
+}
