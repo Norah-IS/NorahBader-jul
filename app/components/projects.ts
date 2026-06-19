@@ -36,7 +36,7 @@ export const projects: Project[] = [
     summary: 'This portfolio website — designed and built from scratch to showcase my projects and skills.',
     problem: 'Needed a clean, fast, and maintainable way to present my work online.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    liveUrl: 'https://norah-bader-aljulayfi.vercel.app/',
+    liveUrl: 'https://norah-badr-aljulayfi.vercel.app/',
     githubUrl: 'https://github.com/Norah-IS/NorahBader-jul',
   },
   {
