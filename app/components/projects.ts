@@ -1,19 +1,25 @@
-export type ProjectCategory = 'University Project' | 'Personal' | 'Coursework';
+export type ProjectCategory = 'University Project' | 'Personal' | 'Coursework' | 'Improved Personal';
+
+export interface ProjectFile {
+  name: string;
+  path: string;
+}
 
 export interface Project {
   title: string;
-  category: ProjectCategory;
+  category: ProjectCategory[];
   summary: string;
   problem: string;
   stack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  files?: ProjectFile[];
 }
 
 export const projects: Project[] = [
   {
     title: "ImamuTechVerse",
-    category: "University Project",
+    category: ["University Project", "Improved Personal"],
     summary: "A bilingual (Arabic / English) RTL-first web platform for managing student extracurricular activities at Imam Muhammad ibn Saud Islamic University. Students discover and register for events, check in via QR scan with live GPS verification, and receive digital attendance certificates automatically.",
     problem: "Campus activity management relied on paper forms and manual spreadsheets, making it impossible to track attendance accurately, issue certificates at scale, or give organizers real-time visibility into participation across colleges.",
     stack: ['React 18',
@@ -28,11 +34,14 @@ export const projects: Project[] = [
       'Sonner',
       'Lucide React',],
     liveUrl: "https://imamu-tech-verse.vercel.app/",
-    githubUrl: "https://github.com/Norah-IS/ImamuTechVerse", 
+    githubUrl: "https://github.com/Norah-IS/ImamuTechVerse",
+    files: [
+      { name: "Project Report", path: "/files/imamutech-report.pdf" },
+    ],
   },
   {
     title: 'Personal Portfolio',
-    category: 'Personal',
+    category: ['Personal'],
     summary: 'This portfolio website — designed and built from scratch to showcase my projects and skills.',
     problem: 'Needed a clean, fast, and maintainable way to present my work online.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
@@ -40,8 +49,22 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Norah-IS/NorahBader-jul',
   },
   {
+    title: 'Hear Me ',
+    category: ["University Project"],
+    summary:'Requirement Engineering project for building a perfect requirement spesification document for System designed to improve communication for deaf users through',
+    problem:     'People with hearing difficulties face challenges in daily communication, and existing solutions had limitations in language support and platform availability.',
+
+    stack: [    'Requirements Analysis',
+    'Use Case Diagram',
+    'Stakeholder Analysis',
+    'User Stories',
+    'Draw.io',
+    'Figma'],
+    files: [{ name: "Hear Me report", path: "/images/HEARME.pdf" }],
+    
+  },{
     title: 'Zid Market',
-    category: "University Project",
+    category: ["University Project"],
     summary: 'A database-driven full-featured platform for enabling sellers to list products and buyers to discover and purchase from multiple vendors with secure payment processing.',
     problem: 'Course project demonstrating relational database design and SQL query optimization.',
     stack: ['Oracle SQL Developer', "React",

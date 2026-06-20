@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, FileText } from 'lucide-react';
 import { projects } from './projects';
 
 export default function Projects() {
@@ -15,9 +15,13 @@ export default function Projects() {
           <div className="projects-grid">
             {projects.map(p => (
               <article key={p.title} className="project-card">
-                <span className={`card-badge card-badge--${p.category.toLowerCase().replace(' ', '-')}`}>
-                  {p.category}
-                </span>
+                <div className="card-badges">
+                  {p.category.map(cat => (
+                    <span key={cat} className={`card-badge card-badge--${cat.toLowerCase().replace(/ /g, '-')}`}>
+                      {cat}
+                    </span>
+                  ))}
+                </div>
                 <h3 className="card-title">{p.title}</h3>
                 <p className="card-summary">{p.summary}</p>
                 <p className="card-problem">
@@ -37,6 +41,11 @@ export default function Projects() {
                       <Github size={14} aria-hidden="true" /> GitHub
                     </a>
                   )}
+                  {p.files?.map(f => (
+                    <a key={f.path} href={f.path} target="_blank" rel="noopener noreferrer" className="card-link">
+                      <FileText size={14} aria-hidden="true" /> {f.name}
+                    </a>
+                  ))}
                 </div>
               </article>
             ))}
