@@ -1,10 +1,5 @@
 export type ProjectCategory = 'University Project' | 'Personal' | 'Coursework' | 'Improved Personal';
 
-export interface ProjectFile {
-  name: string;
-  path: string;
-}
-
 export interface Project {
   title: string;
   category: ProjectCategory[];
@@ -13,7 +8,7 @@ export interface Project {
   stack: string[];
   liveUrl?: string;
   githubUrl?: string;
-  files?: ProjectFile[];
+  files?: string;
 }
 
 export const projects: Project[] = [
@@ -35,9 +30,7 @@ export const projects: Project[] = [
       'Lucide React',],
     liveUrl: "https://imamu-tech-verse.vercel.app/",
     githubUrl: "https://github.com/Norah-IS/ImamuTechVerse",
-    files: [
-      { name: "Project Report", path: "/files/imamutech-report.pdf" },
-    ],
+    
   },
   {
     title: 'Personal Portfolio',
@@ -60,8 +53,7 @@ export const projects: Project[] = [
     'User Stories',
     'Draw.io',
     'Figma'],
-    files: [{ name: "Hear Me report", path: "/images/HEARME.pdf" }],
-    
+    files: 'https://drive.google.com/file/d/1GfRLN2nhXwCrpWHVpypcpAXC69lh03KW/view?usp=sharing',
   },{
     title: 'Zid Market',
     category: ["University Project"],
@@ -75,5 +67,6 @@ export const projects: Project[] = [
       "Vitest"],
     liveUrl: 'https://zidmarket-pi.vercel.app/',
     githubUrl: 'https://github.com/Norah-IS/zidmarket',
+    files: 'https://drive.google.com/file/d/1bUXHS7lMLGk8bebSfyFIx3TWSAtJhhan/view?usp=sharing'
   },
 ];

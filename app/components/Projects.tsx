@@ -41,11 +41,11 @@ export default function Projects() {
                       <Github size={14} aria-hidden="true" /> GitHub
                     </a>
                   )}
-                  {p.files?.map(f => (
-                    <a key={f.path} href={f.path} download className="card-link">
-                      <FileText size={14} aria-hidden="true" /> {f.name}
+                  {p.files && (
+                    <a href={p.files} target="_blank" rel="noopener noreferrer" className="card-link">
+                      <FileText size={14} aria-hidden="true" /> Report
                     </a>
-                  ))}
+                  )}
                 </div>
               </article>
             ))}
