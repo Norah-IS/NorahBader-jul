@@ -42,7 +42,7 @@ export default function Projects() {
                     </a>
                   )}
                   {p.files?.map(f => (
-                    <a key={f.path} href={f.path} target="_blank" rel="noopener noreferrer" className="card-link">
+                    <a key={f.path} href={f.path} download className="card-link">
                       <FileText size={14} aria-hidden="true" /> {f.name}
                     </a>
                   ))}
