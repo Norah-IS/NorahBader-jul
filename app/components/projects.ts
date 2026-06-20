@@ -5,6 +5,7 @@ export interface Project {
   category: ProjectCategory[];
   summary: string;
   problem: string;
+  I_Worked_On?:string;
   stack: string[];
   liveUrl?: string;
   githubUrl?: string;
@@ -30,7 +31,8 @@ export const projects: Project[] = [
       'Lucide React',],
     liveUrl: "https://imamu-tech-verse.vercel.app/",
     githubUrl: "https://github.com/Norah-IS/ImamuTechVerse",
-    
+    files: "https://drive.google.com/file/d/1LMB2aaPZg_q-ZAbfnGv9s70_xFptKLPW/view?usp=sharing",
+    I_Worked_On: "Developing the prototype, CRC Card, Activity Diagram, checking the other diagrams"
   },
   {
     title: 'Personal Portfolio',
@@ -46,7 +48,6 @@ export const projects: Project[] = [
     category: ["University Project"],
     summary:'Requirement Engineering project for building a perfect requirement spesification document for System designed to improve communication for deaf users through',
     problem:     'People with hearing difficulties face challenges in daily communication, and existing solutions had limitations in language support and platform availability.',
-
     stack: [    'Requirements Analysis',
     'Use Case Diagram',
     'Stakeholder Analysis',
@@ -67,6 +68,6 @@ export const projects: Project[] = [
       "Vitest"],
     liveUrl: 'https://zidmarket-pi.vercel.app/',
     githubUrl: 'https://github.com/Norah-IS/zidmarket',
-    files: 'https://drive.google.com/file/d/1bUXHS7lMLGk8bebSfyFIx3TWSAtJhhan/view?usp=sharing'
+    files: 'https://docs.google.com/document/d/19MDBo_QtNITehgmnqInqCZPLInr3AdFm/edit?usp=sharing&ouid=114161749570463908296&rtpof=true&sd=true'
   },
 ];
