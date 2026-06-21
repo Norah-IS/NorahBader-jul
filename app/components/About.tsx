@@ -16,7 +16,6 @@ export default function About() {
         </div>
         <div className="about-text">
           <h2 className="section-title">About</h2>
-          {/* Replace this with your real bio — 2–3 sentences */}
           <p className="body-text placeholder-text">
   I'm Norah Aljulayfi, a Computer Information Systems student with a
   foundation in programming, databases, and web development. I'm especially

@@ -27,6 +27,11 @@ export default function Projects() {
                 <p className="card-problem">
                   <span className="label">Problem: </span>{p.problem}
                 </p>
+                {p.I_Worked_On && (
+                  <p className="card-problem">
+                    <span className="label">I Worked On: </span>{p.I_Worked_On}
+                  </p>
+                )}
                 <ul className="stack-tags" aria-label="Tech stack">
                   {p.stack.map(t => <li key={t}>{t}</li>)}
                 </ul>
