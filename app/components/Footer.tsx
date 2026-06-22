@@ -1,7 +1,12 @@
+'use client';
+
+import { useLang } from '../context/LangContext';
+
 export default function Footer() {
+  const { t } = useLang();
   return (
     <footer className="site-footer">
-      <p>© 2026 Norah Aljulayfi</p>
+      <p>{t.footer.copy}</p>
     </footer>
   );
 }

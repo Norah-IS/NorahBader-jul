@@ -1,4 +1,7 @@
+'use client';
+
 import { Mail, Linkedin, Github, Phone } from 'lucide-react';
+import { useLang } from '../context/LangContext';
 
 const contacts = [
   { Icon: Mail,     label: 'norah.b.aljulayfi@gmail.com', href: 'mailto:norah.b.aljulayfi@gmail.com' },
@@ -8,13 +11,12 @@ const contacts = [
 ];
 
 export default function Contact() {
+  const { t } = useLang();
   return (
     <section id="contact" className="section">
       <div className="section-inner">
-        <h2 className="section-title">Contact</h2>
-        <p className="body-text contact-intro">
-          Open to opportunities, collaborations, and conversations.
-        </p>
+        <h2 className="section-title">{t.contact.title}</h2>
+        <p className="body-text contact-intro">{t.contact.intro}</p>
         <ul className="contact-list">
           {contacts.map(({ Icon, label, href }) => (
             <li key={href}>

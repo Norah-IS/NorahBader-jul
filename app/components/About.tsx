@@ -1,6 +1,10 @@
+'use client';
+
 import Image from 'next/image';
+import { useLang } from '../context/LangContext';
 
 export default function About() {
+  const { t } = useLang();
   return (
     <section id="about" className="section">
       <div className="section-inner about-grid">
@@ -15,12 +19,9 @@ export default function About() {
           />
         </div>
         <div className="about-text">
-          <h2 className="section-title">About</h2>
-          <p className="body-text placeholder-text">
-  I'm Norah Aljulayfi, a Computer Information Systems student with a
-  foundation in programming, databases, and web development. I'm especially
-  drawn to AI engineering, and I enjoy the challenge of turning data into
-  something that actually works </p>        </div>
+          <h2 className="section-title">{t.about.title}</h2>
+          <p className="body-text placeholder-text">{t.about.text}</p>
+        </div>
       </div>
     </section>
   );

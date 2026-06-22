@@ -35,15 +35,6 @@ export const projects: Project[] = [
     I_Worked_On: "Developing the prototype, CRC Card, Activity Diagram, checking the other diagrams"
   },
   {
-    title: 'Personal Portfolio',
-    category: ['Personal'],
-    summary: 'This portfolio website — designed and built from scratch to showcase my projects and skills.',
-    problem: 'Needed a clean, fast, and maintainable way to present my work online.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    liveUrl: 'https://norah-badr-aljulayfi.vercel.app/',
-    githubUrl: 'https://github.com/Norah-IS/NorahBader-jul',
-  },
-  {
     title: 'Hear Me ',
     category: ["University Project"],
     summary:'Requirement Engineering project for building a perfect requirement spesification document for System designed to improve communication for deaf users through',
@@ -69,5 +60,13 @@ export const projects: Project[] = [
     liveUrl: 'https://zidmarket-pi.vercel.app/',
     githubUrl: 'https://github.com/Norah-IS/zidmarket',
     files: 'https://docs.google.com/document/d/19MDBo_QtNITehgmnqInqCZPLInr3AdFm/edit?usp=sharing&ouid=114161749570463908296&rtpof=true&sd=true'
+  }, {
+    title: 'Personal Portfolio',
+    category: ['Personal'],
+    summary: 'This portfolio website — designed and built from scratch to showcase my projects and skills.',
+    problem: 'Needed a clean, fast, and maintainable way to present my work online.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://norah-badr-aljulayfi.vercel.app/',
+    githubUrl: 'https://github.com/Norah-IS/NorahBader-jul',
   },
 ];
