@@ -11,7 +11,7 @@ export default function Hero() {
         <p className="hero-eyebrow">{t.hero.eyebrow}</p>
         <h1 className="hero-name">{t.hero.name}</h1>
         <p className="hero-role">{t.hero.role}</p>
-        <a href="/cv.pdf" download className="btn-primary">{t.hero.downloadCV}</a>
+        <a href="https://drive.google.com/file/d/1AY3AP_kmL3ztK4tFW1LhBti9Vtaw8Z_V/view?usp=sharing" download className="btn-primary">{t.hero.downloadCV}</a>
       </div>
       <a href="#about" className="scroll-hint" aria-label="Scroll to about section">
         <ArrowDown size={20} />
