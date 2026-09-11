@@ -28,9 +28,11 @@ export default function Projects() {
                 </div>
                 <h3 className="card-title">{p.title}</h3>
                 <p className="card-summary">{p.summary}</p>
-                <p className="card-problem">
-                  <span className="label">{t.projects.problem} </span>{p.problem}
-                </p>
+                {p.problem && (
+                  <p className="card-problem">
+                    <span className="label">{t.projects.problem} </span>{p.problem}
+                  </p>
+                )}
                 {p.I_Worked_On && (
                   <p className="card-problem">
                     <span className="label">{t.projects.workedOn} </span>{p.I_Worked_On}
