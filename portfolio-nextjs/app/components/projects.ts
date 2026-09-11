@@ -71,7 +71,7 @@ export const projects: Project[] = [
   }, {
     title: 'CIS Council platform',
     category: ['Project Supervisor, Developer'],
-    summary: 'Worked with the development team to build and maintain the Student Advisory Council website at Imam Mohammad Ibn Saud Islamic University. The website helps students stay updated on council activities, initiatives, and announcements.',
+    summary: 'Developed and maintained the Student Advisory Council website at Imam Mohammad Ibn Saud Islamic University. The website helps students stay updated on council activities, initiatives, and announcements.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS','PostgreSQL','tRPC'],
     liveUrl: 'https://imamusac.com/',
 
